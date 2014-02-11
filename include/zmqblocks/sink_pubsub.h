@@ -47,6 +47,7 @@ namespace gr {
        * creating new instances.
        */
       static sptr make(size_t itemsize, char *address);
+	  virtual void byebye() = 0;
     };
 
   } // namespace zmqblocks

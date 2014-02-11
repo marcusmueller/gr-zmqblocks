@@ -77,6 +77,11 @@ namespace gr {
 
     }
 
+	void
+	sink_pubsub_impl::byebye()
+	{
+		d_socket->close();
+	}
   } /* namespace zmqblocks */
 } /* namespace gr */
 
